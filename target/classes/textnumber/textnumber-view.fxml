@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textnumber.textnumberController">
+   <children>
+      <TextField fx:id="txtInput" layoutX="15.0" layoutY="11.0" prefHeight="60.0" prefWidth="423.0" />
+      <Button fx:id="btnReverseText" layoutX="16.0" layoutY="83.0" mnemonicParsing="false" onAction="#onReverseTextClick" prefHeight="99.0" prefWidth="186.0" text="Reverse Text">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnCountVowel" layoutX="252.0" layoutY="83.0" mnemonicParsing="false" onAction="#onCountVowelClick" prefHeight="99.0" prefWidth="186.0" text="Count Vowels">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnDigitSum" layoutX="252.0" layoutY="190.0" mnemonicParsing="false" onAction="#onDigitSumClick" prefHeight="99.0" prefWidth="186.0" text="Digits Sum">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnReset" layoutX="151.0" layoutY="312.0" mnemonicParsing="false" onAction="#onResetClick" prefHeight="70.0" prefWidth="148.0" text="RESET">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TextArea fx:id="txtOutput" layoutX="18.0" layoutY="400.0" prefHeight="127.0" prefWidth="417.0" />
+      <Button fx:id="btnWordWork" layoutX="16.0" layoutY="190.0" mnemonicParsing="false" onAction="#onWordWorkClick" prefHeight="99.0" prefWidth="186.0" text="Open wordwork">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

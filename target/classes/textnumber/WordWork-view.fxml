@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textnumber.textnumberController">
+   <children>
+      <TextField fx:id="txtWord" layoutX="15.0" layoutY="11.0" prefHeight="60.0" prefWidth="423.0" />
+      <Button layoutX="16.0" layoutY="83.0" mnemonicParsing="false" onAction="#onSingleWordClick" prefHeight="99.0" prefWidth="186.0" text="Make Single Word">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="252.0" layoutY="83.0" mnemonicParsing="false" onAction="#onAlternateTextClick" prefHeight="99.0" prefWidth="186.0" text="Alternate Text">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="252.0" layoutY="190.0" mnemonicParsing="false" onAction="#onLetterBoxClick" prefHeight="99.0" prefWidth="186.0" text="Print Letter Box">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="16.0" layoutY="301.0" mnemonicParsing="false" onAction="#onWWReset" prefHeight="99.0" prefWidth="186.0" text="RESET">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TextArea fx:id="txtWordDisplay" layoutX="17.0" layoutY="409.0" prefHeight="127.0" prefWidth="417.0" />
+      <Button layoutX="16.0" layoutY="190.0" mnemonicParsing="false" onAction="#onPalindromeClick" prefHeight="99.0" prefWidth="186.0" text="Is Palindrome">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnOpenTextNumber" layoutX="252.0" layoutY="301.0" mnemonicParsing="false" onAction="#onOpenTextNumberClick" prefHeight="99.0" prefWidth="186.0" text="Open TextNumber">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

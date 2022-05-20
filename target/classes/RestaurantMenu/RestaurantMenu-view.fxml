@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestaurantMenu.RestaurantMenuController">
+   <children>
+      <ImageView fitHeight="638.0" fitWidth="839.0" layoutX="-132.0" layoutY="-22.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@yummy-pizza.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="124.0" layoutY="30.0" prefHeight="61.0" prefWidth="352.0">
+         <children>
+            <CheckBox fx:id="chkPizza" mnemonicParsing="false" onAction="#onPizzaCheck" prefHeight="63.0" prefWidth="352.0" text="Pizza">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkDrink" mnemonicParsing="false" onAction="#onDrinkCheck" prefHeight="61.0" prefWidth="352.0" text="Drink">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkFries" mnemonicParsing="false" onAction="#onFriesCheck" prefHeight="67.0" prefWidth="352.0" text="Fries">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </HBox>
+      <HBox layoutX="124.0" layoutY="91.0" prefHeight="61.0" prefWidth="352.0">
+         <children>
+            <RadioButton fx:id="radPizzaSmall" mnemonicParsing="false" onAction="#onSmallPizzaClick" prefHeight="67.0" prefWidth="352.0" text="Small(13.0)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Pizza" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radDrinkSmall" mnemonicParsing="false" onAction="#onSmallDrinkClick" prefHeight="67.0" prefWidth="352.0" text="Small(1.5)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Drink" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radFriesSmall" mnemonicParsing="false" onAction="#onSmallFriesClick" prefHeight="67.0" prefWidth="352.0" text="Small(1.0)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Fries" />
+               </toggleGroup>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox layoutX="124.0" layoutY="152.0" prefHeight="61.0" prefWidth="352.0">
+         <children>
+            <RadioButton fx:id="radPizzaMedium" mnemonicParsing="false" onAction="#onMediumPizzaClick" prefHeight="67.0" prefWidth="352.0" text="Medium(15.5)" toggleGroup="$Pizza">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radDrinkMedium" mnemonicParsing="false" onAction="#onMediumDrinkClick" prefHeight="67.0" prefWidth="352.0" text="Medium(2.0)" toggleGroup="$Drink">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radFriesMedium" mnemonicParsing="false" onAction="#onMediumFriesClick" prefHeight="67.0" prefWidth="352.0" text="Medium(1.5)" toggleGroup="$Fries">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox layoutX="124.0" layoutY="213.0" prefHeight="61.0" prefWidth="352.0">
+         <children>
+            <RadioButton fx:id="radPizzaLarge" mnemonicParsing="false" onAction="#onLargePizzaClick" prefHeight="61.0" prefWidth="118.0" text="Large(17.0)" toggleGroup="$Pizza">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radDrinkLarge" mnemonicParsing="false" onAction="#onLargeDrinkClick" prefHeight="61.0" prefWidth="119.0" text="Large(2.5)" toggleGroup="$Drink">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radFriesLarge" mnemonicParsing="false" onAction="#onLargeFriesClick" prefHeight="67.0" prefWidth="104.0" text="Large(2.0)" toggleGroup="$Fries">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <TextArea fx:id="txtAreaList" layoutX="124.0" layoutY="274.0" prefHeight="133.0" prefWidth="328.0" />
+      <DatePicker fx:id="date" layoutX="207.0" layoutY="433.0" />
+      <Button fx:id="btnTotalPrice" layoutX="253.0" layoutY="479.0" mnemonicParsing="false" onAction="#onTotalPriceButtonClick" prefHeight="46.0" prefWidth="94.0" text="Total Price" />
+      <Label fx:id="lblPrice" layoutX="194.0" layoutY="527.0" prefHeight="70.0" prefWidth="404.0" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="theDate_" layoutX="414.0" layoutY="438.0" prefHeight="17.0" prefWidth="144.0" wrapText="true" />
+      <Label layoutX="143.0" text="Welcome to Ahnaf's Pizzaria!">
+         <font>
+            <Font name="Apple Chancery" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

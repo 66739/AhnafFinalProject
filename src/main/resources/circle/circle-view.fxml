@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="circle.CircleController">
+   <children>
+      <Label layoutX="51.0" layoutY="97.0" text="Enter Radius: ">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnArea" layoutX="51.0" layoutY="200.0" mnemonicParsing="false" onAction="#onCircleAreaButtonClick" prefHeight="60.0" prefWidth="170.0" text="AREA">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPerimeter" layoutX="350.0" layoutY="200.0" mnemonicParsing="false" onAction="#onCirclePerimeterButtonClick" prefHeight="60.0" prefWidth="170.0" text="PERIMETER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblArea" alignment="CENTER" layoutX="200.0" layoutY="266.0" prefHeight="100.0" prefWidth="200.0">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textRadius" layoutX="311.0" layoutY="96.0" prefHeight="45.0" prefWidth="170.0" />
+      <Label fx:id="lblCircumference" alignment="CENTER" layoutX="84.0" layoutY="293.0" prefHeight="46.0" prefWidth="455.0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblArea" alignment="CENTER" layoutX="84.0" layoutY="343.0" prefHeight="46.0" prefWidth="455.0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
