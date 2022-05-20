@@ -5,20 +5,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MovieAnalyzer.MovieAnalyzerController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #90EE90;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MovieAnalyzer.MovieAnalyzerController">
    <children>
-      <Button fx:id="btnBestRate" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBestRateClick" prefHeight="90.0" prefWidth="161.0" text="Best Rated Movies" />
-      <Button fx:id="btnWorthIt" layoutX="220.0" layoutY="14.0" mnemonicParsing="false" onAction="#onWorthItClick" prefHeight="90.0" prefWidth="161.0" text="Most Worth It To Watch" />
-      <Button fx:id="btnDirector" layoutX="425.0" layoutY="14.0" mnemonicParsing="false" onAction="#onDirectorClick" prefHeight="90.0" prefWidth="161.0" text="Your Top Director" />
-      <Button fx:id="btnLongestMovie" layoutX="14.0" layoutY="118.0" mnemonicParsing="false" onAction="#onLongestMovieClick" prefHeight="90.0" prefWidth="161.0" text="Longest Movie" />
-      <Button fx:id="btnNotWorthIt" layoutX="220.0" layoutY="118.0" mnemonicParsing="false" onAction="#onLeastWorthToWatch" prefHeight="90.0" prefWidth="161.0" text="Least Worth It to Watch" />
-      <Button fx:id="btnLowestRated" layoutX="425.0" layoutY="118.0" mnemonicParsing="false" onAction="#onLowestRatedClick" prefHeight="90.0" prefWidth="161.0" text="Lowest Rated Movie" />
-      <Label fx:id="lblTitle" alignment="CENTER" layoutX="181.0" layoutY="223.0" prefHeight="62.0" prefWidth="239.0" textAlignment="CENTER" wrapText="true">
+      <Button fx:id="btnBestRate" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBestRateClick" prefHeight="90.0" prefWidth="161.0" style="-fx-background-color: aqua;" text="Best Rated Movie" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnWorthIt" layoutX="220.0" layoutY="14.0" mnemonicParsing="false" onAction="#onWorthItClick" prefHeight="90.0" prefWidth="161.0" style="-fx-background-color: aqua;" text="Most Worth It To Watch" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnDirector" layoutX="425.0" layoutY="14.0" mnemonicParsing="false" onAction="#onDirectorClick" prefHeight="90.0" prefWidth="161.0" style="-fx-background-color: aqua;" text="Your Top Director" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnLongestMovie" layoutX="14.0" layoutY="118.0" mnemonicParsing="false" onAction="#onLongestMovieClick" prefHeight="90.0" prefWidth="161.0" style="-fx-background-color: aqua;" text="Longest Movie" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnNotWorthIt" layoutX="220.0" layoutY="118.0" mnemonicParsing="false" onAction="#onLeastWorthToWatch" prefHeight="90.0" prefWidth="161.0" style="-fx-background-color: aqua;" text="Least Worth It to Watch" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="12.5" />
+         </font></Button>
+      <Button fx:id="btnLowestRated" layoutX="425.0" layoutY="118.0" mnemonicParsing="false" onAction="#onLowestRatedClick" prefHeight="90.0" prefWidth="161.0" style="-fx-background-color: aqua;" text="Lowest Rated Movie" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="lblTitle" alignment="CENTER" layoutX="181.0" layoutY="223.0" prefHeight="62.0" prefWidth="239.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
             <Font size="21.0" />
          </font>
       </Label>
-      <Label fx:id="lblAnswer" alignment="CENTER" layoutX="165.0" layoutY="294.0" prefHeight="41.0" prefWidth="272.0" textAlignment="CENTER" wrapText="true">
+      <Label fx:id="lblAnswer" alignment="CENTER" layoutX="165.0" layoutY="294.0" prefHeight="41.0" prefWidth="272.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
             <Font size="15.0" />
          </font>

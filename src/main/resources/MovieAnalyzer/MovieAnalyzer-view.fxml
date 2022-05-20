@@ -15,9 +15,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MovieAnalyzer.MovieAnalyzerController">
+<AnchorPane prefHeight="789.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MovieAnalyzer.MovieAnalyzerController">
    <children>
-      <ImageView fitHeight="468.0" fitWidth="619.0" layoutX="-2.0" layoutY="-24.0" opacity="0.53" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="466.0" fitWidth="625.0" layoutX="-2.0" layoutY="-24.0" opacity="0.53" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@wp2878050.jpg" />
          </image>
@@ -92,7 +92,7 @@
       <RadioButton fx:id="rbCrime" layoutX="163.0" layoutY="313.0" mnemonicParsing="false" onAction="#getGenre" text="Crime" toggleGroup="$genre1" />
       <Label layoutX="109.0" layoutY="337.0" text="Your choice: " />
       <Label fx:id="lblGenre" layoutX="180.0" layoutY="337.0" prefHeight="17.0" prefWidth="57.0" />
-      <TableView fx:id="table" layoutX="-5.0" layoutY="440.0" prefHeight="350.0" prefWidth="617.0">
+      <TableView fx:id="table" layoutX="-5.0" layoutY="440.0" prefHeight="350.0" prefWidth="625.0" style="-fx-background-color: #90EE90;">
         <columns>
           <TableColumn fx:id="NameColumn" prefWidth="139.0" text="Name" />
           <TableColumn fx:id="LengthColumn" prefWidth="109.0" text="Length" />
