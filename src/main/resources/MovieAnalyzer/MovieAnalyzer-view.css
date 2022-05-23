@@ -1,0 +1,37 @@
+.table-view {
+    -fx-background-color: #818589;
+}
+
+#NameColumn{
+    -fx-background-color: #818589;
+    -fx-text-fill: white;
+}
+
+#GenreColumn{
+    -fx-background-color: #818589;
+    -fx-text-fill: white;
+}
+
+#DirectorColumn{
+    -fx-background-color: #818589;
+    -fx-text-fill: white;
+}
+
+#LengthColumn{
+    -fx-background-color: #818589;
+    -fx-text-fill: white;
+}
+
+#RatingColumn{
+    -fx-background-color: #818589;
+    -fx-text-fill: white;
+}
+
+#lblGenre{
+    -fx-text-fill: white;
+}
+
+
+
+
+

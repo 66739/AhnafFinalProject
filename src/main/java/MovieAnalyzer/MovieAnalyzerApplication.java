@@ -14,7 +14,7 @@ public class MovieAnalyzerApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MovieAnalyzerApplication.class.getResource("MovieAnalyzer-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 602, 800);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 800);
         primaryStage.setTitle("Movie Analyzer");
         primaryStage.setScene(scene);
         primaryStage.show();

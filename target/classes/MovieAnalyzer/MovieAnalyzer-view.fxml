@@ -15,9 +15,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="789.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MovieAnalyzer.MovieAnalyzerController">
+<AnchorPane prefHeight="789.0" prefWidth="500.0" style="-fx-background-color: white;" stylesheets="MovieAnalyzer-view.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MovieAnalyzer.MovieAnalyzerController">
    <children>
-      <ImageView fitHeight="466.0" fitWidth="625.0" layoutX="-2.0" layoutY="-24.0" opacity="0.53" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="466.0" fitWidth="625.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@wp2878050.jpg" />
          </image>
@@ -48,59 +48,139 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="145.0" text="Movie Name">
+      <Label layoutX="48.0" layoutY="145.0" text="Movie Name">
+         <font>
+            <Font name="Lucida Grande" size="19.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7368420958518982" green="0.07846003770828247" blue="0.07846003770828247" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.5363060235977173" blue="0.5363060235977173" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtName" layoutX="16.0" layoutY="172.0" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #818589#818589;" />
+      <Label layoutX="271.0" layoutY="145.0" text="Length">
+         <font>
+            <Font name="Lucida Grande" size="19.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7368420958518982" green="0.07846003770828247" blue="0.07846003770828247" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.5363060235977173" blue="0.5363060235977173" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtLength" layoutX="219.0" layoutY="172.0" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #818589#818589;" />
+      <Label layoutX="402.0" layoutY="145.0" text="Rating(Enter as decimal)">
+         <font>
+            <Font name="Lucida Grande" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7368420958518982" green="0.07846003770828247" blue="0.07846003770828247" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.5363060235977173" blue="0.5363060235977173" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtRating" layoutX="428.0" layoutY="172.0" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #818589#818589;" />
+      <Label layoutX="156.0" layoutY="236.0" text="Genre">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7368420958518982" green="0.07846003770828247" blue="0.07846003770828247" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.5363060235977173" blue="0.5363060235977173" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
       </Label>
-      <TextField fx:id="txtName" layoutX="16.0" layoutY="172.0" prefHeight="50.0" prefWidth="160.0" />
-      <Label layoutX="266.0" layoutY="144.0" text="Length">
+      <Label layoutX="366.0" layoutY="230.0" prefHeight="35.0" prefWidth="79.0" text="Director">
          <font>
-            <Font name="System Bold" size="19.0" />
+            <Font name="Lucida Grande" size="20.0" />
          </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7368420958518982" green="0.07846003770828247" blue="0.07846003770828247" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.5363060235977173" blue="0.5363060235977173" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
       </Label>
-      <TextField fx:id="txtLength" layoutX="213.0" layoutY="173.0" prefHeight="50.0" prefWidth="160.0" />
-      <Label layoutX="391.0" layoutY="146.0" text="Rating(Enter as decimal)">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txtRating" layoutX="403.0" layoutY="172.0" prefHeight="50.0" prefWidth="160.0" />
-      <Label layoutX="166.0" layoutY="238.0" text="Genre">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </Label>
-      <Label layoutX="377.0" layoutY="236.0" text="Director">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txtDirector" layoutX="323.0" layoutY="272.0" prefHeight="50.0" prefWidth="160.0" />
-      <Button fx:id="onEnter" layoutX="231.0" layoutY="369.0" mnemonicParsing="false" onAction="#onEnterClick" text="ENTER">
+      <TextField fx:id="txtDirector" layoutX="326.0" layoutY="263.0" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #818589#818589;" />
+      <Button fx:id="onEnter" layoutX="269.0" layoutY="367.0" mnemonicParsing="false" onAction="#onEnterClick" style="-fx-background-color: #818589#818589;" text="ENTER" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
       </Button>
-      <RadioButton fx:id="rbSciFi" layoutX="113.0" layoutY="263.0" mnemonicParsing="false" onAction="#getGenre" text="Sci Fi">
+      <RadioButton fx:id="rbSciFi" layoutX="113.0" layoutY="263.0" mnemonicParsing="false" onAction="#getGenre" text="Sci Fi" textFill="#fffafa">
          <toggleGroup>
             <ToggleGroup fx:id="genre1" />
          </toggleGroup></RadioButton>
-      <RadioButton fx:id="rbRomance" layoutX="113.0" layoutY="288.0" mnemonicParsing="false" onAction="#getGenre" text="Romance" toggleGroup="$genre1" />
-      <RadioButton fx:id="rbDrama" layoutX="195.0" layoutY="263.0" mnemonicParsing="false" onAction="#getGenre" text="Drama" toggleGroup="$genre1" />
-      <RadioButton fx:id="rbAction" layoutX="196.0" layoutY="288.0" mnemonicParsing="false" onAction="#getGenre" text="Action" toggleGroup="$genre1" />
-      <RadioButton fx:id="rbCrime" layoutX="163.0" layoutY="313.0" mnemonicParsing="false" onAction="#getGenre" text="Crime" toggleGroup="$genre1" />
-      <Label layoutX="109.0" layoutY="337.0" text="Your choice: " />
-      <Label fx:id="lblGenre" layoutX="180.0" layoutY="337.0" prefHeight="17.0" prefWidth="57.0" />
-      <TableView fx:id="table" layoutX="-5.0" layoutY="440.0" prefHeight="350.0" prefWidth="625.0" style="-fx-background-color: #90EE90;">
+      <RadioButton fx:id="rbRomance" layoutX="113.0" layoutY="288.0" mnemonicParsing="false" onAction="#getGenre" text="Romance" textFill="#fffafa" toggleGroup="$genre1" />
+      <RadioButton fx:id="rbDrama" layoutX="195.0" layoutY="263.0" mnemonicParsing="false" onAction="#getGenre" text="Drama" textFill="#fffafa" toggleGroup="$genre1" />
+      <RadioButton fx:id="rbAction" layoutX="196.0" layoutY="288.0" mnemonicParsing="false" onAction="#getGenre" text="Action" textFill="#fffafa" toggleGroup="$genre1" />
+      <RadioButton fx:id="rbCrime" layoutX="163.0" layoutY="313.0" mnemonicParsing="false" onAction="#getGenre" text="Crime" textFill="#fffafa" toggleGroup="$genre1" />
+      <Label layoutX="109.0" layoutY="337.0" text="Your choice: " textFill="WHITE" />
+      <Label fx:id="lblGenre" layoutX="180.0" layoutY="337.0" prefHeight="17.0" prefWidth="57.0" textFill="WHITE" />
+      <TableView fx:id="table" layoutX="-1.0" layoutY="436.0" prefHeight="407.0" prefWidth="622.0" stylesheets="@MovieAnalyzer-view.css">
         <columns>
           <TableColumn fx:id="NameColumn" prefWidth="139.0" text="Name" />
           <TableColumn fx:id="LengthColumn" prefWidth="109.0" text="Length" />
             <TableColumn fx:id="RatingColumn" prefWidth="98.0" text="Rating" />
             <TableColumn fx:id="GenreColumn" prefWidth="93.0" text="Genre" />
-            <TableColumn fx:id="DirectorColumn" prefWidth="163.0" text="Director" />
+            <TableColumn fx:id="DirectorColumn" prefWidth="199.0" text="Director" />
         </columns>
       </TableView>
-      <Button fx:id="btnOpenAnalyzer" layoutX="483.0" layoutY="382.0" mnemonicParsing="false" onAction="#onOpenAnalyzerClick" text="OPEN ANALYZER" />
+      <Button fx:id="btnOpenAnalyzer" layoutX="496.0" layoutY="395.0" mnemonicParsing="false" onAction="#onOpenAnalyzerClick" style="-fx-background-color: #818589#818589;" text="OPEN ANALYZER" textFill="WHITE" />
    </children>
 </AnchorPane>
