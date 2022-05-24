@@ -42,7 +42,7 @@ public class MovieAnalyzerController implements Initializable {
     private TextField txtName, txtRating, txtLength, txtDirector;
 
     @FXML
-    private Label lblGenre, lblTitle, lblAnswer;
+    private Label lblGenre, lblTitle, lblAnswer, lblWarning;
 
     @FXML
     private RadioButton rbSciFi, rbRomance, rbCrime, rbDrama, rbAction;
@@ -223,5 +223,17 @@ public class MovieAnalyzerController implements Initializable {
         lblTitle.setText("Your Least Worth It Movie");
         lblAnswer.setText(starting.getName());
     }
+
+    @FXML
+    protected void onMainMenuClick(ActionEvent event) throws IOException {
+        Parent MovieAnalyzer = FXMLLoader.load(getClass().getResource("MovieAnalyzer-view.fxml"));
+        Scene scene = new Scene(MovieAnalyzer);
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Analyzer");
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 }

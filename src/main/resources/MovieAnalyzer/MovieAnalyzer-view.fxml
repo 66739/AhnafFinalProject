@@ -182,5 +182,26 @@
         </columns>
       </TableView>
       <Button fx:id="btnOpenAnalyzer" layoutX="496.0" layoutY="395.0" mnemonicParsing="false" onAction="#onOpenAnalyzerClick" style="-fx-background-color: #818589#818589;" text="OPEN ANALYZER" textFill="WHITE" />
+      <Label fx:id="lblWarning" layoutX="225.0" layoutY="322.0" prefHeight="31.0" prefWidth="179.0">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8552631735801697" green="0.26133039593696594" blue="0.26133039593696594" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

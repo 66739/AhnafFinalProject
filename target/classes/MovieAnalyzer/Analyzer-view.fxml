@@ -41,5 +41,10 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <Button fx:id="btnMainMenu" layoutX="511.0" layoutY="348.0" mnemonicParsing="false" onAction="#onMainMenuClick" prefHeight="52.0" prefWidth="87.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 5;" text="MAIN MENU" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="10.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
