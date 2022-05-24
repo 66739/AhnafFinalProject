@@ -42,7 +42,7 @@ public class MovieAnalyzerController implements Initializable {
     private TextField txtName, txtRating, txtLength, txtDirector;
 
     @FXML
-    private Label lblGenre, lblTitle, lblAnswer, lblWarning;
+    private Label lblGenre, lblTitle, lblAnswer;
 
     @FXML
     private RadioButton rbSciFi, rbRomance, rbCrime, rbDrama, rbAction;
